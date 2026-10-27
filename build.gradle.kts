@@ -1,22 +1,7 @@
 plugins {
-    kotlin("jvm") version "2.4.0"
+    id("com.android.application") version "9.4.1" apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "2.4.0" apply false
 }
 
 group = "org.example"
 version = "1.0-SNAPSHOT"
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-kotlin {
-    jvmToolchain(26)
-}
-
-tasks.test {
-    useJUnitPlatform()
-}

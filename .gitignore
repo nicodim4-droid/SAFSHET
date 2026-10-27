@@ -43,3 +43,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+@'
+
+# Local IDE and Android settings
+.idea/
+local.properties
+.gradle/
+build/
+'@ | Add-Content .gitignore -Encoding UTF8
